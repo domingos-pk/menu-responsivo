@@ -1,0 +1,127 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#0f172a;
+color:white;
+position:relative;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+/* LINKS */
+
+.nav-links{
+list-style:none;
+display:flex;
+align-items:center;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+/* BOTÕES */
+
+.auth-buttons{
+display:flex;
+gap:10px;
+margin-left:20px;
+}
+
+.login{
+padding:8px 18px;
+border:1px solid #38bdf8;
+background:transparent;
+color:#38bdf8;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.login:hover{
+background:#38bdf8;
+color:white;
+}
+
+.signup{
+padding:8px 18px;
+border:none;
+background:#38bdf8;
+color:white;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.signup:hover{
+background:#0284c7;
+}
+
+/* MENU MOBILE */
+
+.menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+.nav-links{
+position:absolute;
+top:65px;
+right:0;
+background:#0f172a;
+width:230px;
+flex-direction:column;
+align-items:flex-start;
+padding:20px;
+display:none;
+}
+
+.nav-links.active{
+display:flex;
+}
+
+.auth-buttons{
+flex-direction:column;
+width:100%;
+}
+
+.login, .signup{
+width:100%;
+}
+
+.menu-toggle{
+display:block;
+}
+
+}
